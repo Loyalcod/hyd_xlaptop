@@ -61,13 +61,13 @@ function ManuBar() {
                       <Link  style={{textDecoration:"none" }} className='profiled_drop' to="/"> <small>About</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"><small>Add to Cart </small> </Link>
+                      <Link style={{textDecoration:"none" }} className='profiled_drop' to="/"><small>Add to Cart </small> </Link>
                     </ListItem>
                     <ListItem>
                       <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small> My profile</small></Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }} className='profiled_drop'  to="/"><small> Signout</small></Link>
+                      <Link style={{textDecoration:"none" }} className='profiled_drop' to="/"><small> Signout</small></Link>
                     </ListItem>
                   </List>
               </div>
