@@ -1,0 +1,324 @@
+.MenuBar {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 5px 5px 10px #DEE1E1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* search form input */
+.MenuBar>form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    /* background-color: blue; */
+}
+
+.MenuBar>form>div> {
+    background-color: aqua;
+}
+
+.MenuBar>form>div>input {
+    width: 500px;
+    height: 34px;
+    outline: none;
+    border: solid 1px#D1E1E0;
+}
+
+
+.MenuBar>form>button {
+
+    /* background-color: aqua; */
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: #027A6F;
+    border: none;
+}
+
+/* logout and profile icon */
+
+.menuLogout {
+    flex: 1;
+    width: 200px;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.logout_profil_container {
+    width: 70%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons_log_prof {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #027A6F;
+
+
+}
+
+/* profile drop down */
+.profileDrop {
+    width: 130px;
+    /* margin-left: 930px; */
+    margin-top: 240px;
+    height: 190px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 5px 10px #D1E1E0;
+    /* display: none; */
+}
+
+.profiled_drop {
+    width: 100%;
+    /* background-color: #027A6F; */
+    border-bottom: solid 1px #D1E1E0;
+    height: 20px;
+    color: #a6b4b3;
+}
+
+.profiled_drop:hover {
+    color: black;
+}
+
+/* circle of cart */
+.circleof_cart {
+    width: 15px;
+    height: 17px;
+    position: absolute;
+    /* background-color: red; */
+    border-radius: 10px;
+    padding-right: 5px;
+    top: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleof_cart>small{
+    background-color: red;
+    border-radius: 2px;
+    height: 17px;
+    width: 12px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.mobile_title_bar{
+    display: none;
+}
+
+/* ---------------------------- all secreen sizes --------------------------- */
+
+
+
+
+
+/* screen size of 800 */
+@media only screen and (max-width: 800px) {
+    .logout_profil_container{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        color: #027A6F;
+        align-items: center;
+        /* justify-content: center; */
+    } 
+    .circleof_cart {
+       display: none;
+    }
+    .MenuBar{
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .MenuBar>form {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        order: 2;
+        /* background-color: blue; */
+    }
+    .searchinpu{
+        width: 60%;
+        /* background-color: pink; */
+        height: 80%;
+    }
+    
+    .MenuBar>form>div>input {
+        width: 100%;
+        height: 34px;
+        outline: none;
+        border: solid 1px#D1E1E0;
+    }
+    
+    
+    .MenuBar>form>button {
+    
+        /* background-color: aqua; */
+        height: 40px;
+        width: 20%;
+        color: white;
+        background-color: #027A6F;
+        border: none;
+    }
+
+    .menuLogout{
+        height: 100%;
+        width: 20%;
+        order: 1;
+        display: flex;
+        /* background-color: #027A6F; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile_title_bar{
+        display: flex;
+        position:absolute;
+        width: 200px;
+        height: 500px;
+        margin-top: 37px;
+        box-shadow: 0px 9px 10px #a6b4b3;
+        background-color: white;
+    }
+    
+}
+
+/* screen size of 360 */
+@media only screen and (max-width: 360px) {
+
+    .MenuBar>form{
+        margin-right: 20px ;
+    }
+    .searchinpu{
+        width: 80%;
+        /* background-color: pink; */
+        height: 70%;
+    }
+
+    .MenuBar>form>div>input {
+        width: 100%;
+        height: 30px;
+        outline: none;
+        border: solid 1px#D1E1E0;
+    }
+   
+    .MenuBar>form>button {
+    
+        /* background-color: aqua; */
+        height: 27px;
+        font-size: 10px;
+        width: 20%;
+        color: white;
+        background-color: #027A6F;
+        border: none;
+    }
+
+
+    .linkchangmobile{
+        color: #027A6F;
+    }
+
+}
+
+/* screen size of 700 */
+/* @media only screen and (max-width: 700px) {
+    .circleof_cart {
+        right: 365px;
+    }
+
+    .profileDrop {
+        margin-left: 900px;
+    }
+} */
+
+/* screen size of 412 */
+/* @media only screen and (max-width: 412px) {
+    .circleof_cart {
+        right: 365px;
+    }
+
+    .profileDrop {
+        margin-left: 900px;
+    }
+} */
+
+/* screen size of 393 */
+/* @media only screen and (max-width: 393px) {
+    .circleof_cart {
+        right: 365px;
+    }
+
+    .profileDrop {
+        margin-left: 900px;
+    }
+} */
+
+/* screen size of 390 */
+/* @media only screen and (max-width: 390px) {
+    .circleof_cart {
+        right: 365px;
+    }
+
+    .profileDrop {
+        margin-left: 900px;
+    }
+} */
+
+
+
+
+
+
+/* screen size of 1920 */
+/* @media only screen and (max-width: 1920px) {
+    
+} */
+
+ /* screen size of 1536 */
+ /* @media only screen and (max-width: 1536px) {
+    
+} */
+
+/* screen size of 1360 */
+/* @media only screen and (max-width: 1366px) {
+    
+} */
+
+/* screen size of 1280 */
+/* @media only screen and (max-width: 1280px) {
+   
+} */
