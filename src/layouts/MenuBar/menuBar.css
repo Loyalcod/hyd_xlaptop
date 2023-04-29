@@ -208,11 +208,11 @@
     .mobile_title_bar{
         display: flex;
         position:absolute;
-        width: 50%;
+        width: 40%;
         height: 100%;
         padding-left: 90px;
         margin-top: 37px;
-        /* margin-left:; */
+        
         box-shadow: 0px 9px 10px #a6b4b3;
         background-color: white;
     }

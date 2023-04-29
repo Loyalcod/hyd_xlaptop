@@ -45,33 +45,29 @@ function ManuBar() {
         <div className="hamburger">
           <DehazeIcon onClick={mobile_titlebar} />         
 
-          {showMobile && <Slide direction="right" in={mobile_titlebar}>
+          {showMobile && <Slide direction="right" in={mobile_titlebar}  {...(mobile_titlebar? { timeout: 500 } : {})}> 
               <div className="mobile_title_bar">
                   <List className='mobileflexcontrolMenu'>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/"> <small>Home </small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>Home </small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/"> <small>PC & Tablet</small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>PC & Tablet</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/"> <small>Phones</small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>Phones</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link  style={{textDecoration:"none" }} to="/"> <small>About</small> </Link>
+                      <Link  style={{textDecoration:"none" }} className='profiled_drop' to="/"> <small>About</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/"><small>Add to Cart </small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"><small>Add to Cart </small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/">
-                          <small></small> My profile
-                      </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small> My profile</small></Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  to="/">
-                          <small> Signout</small>
-                      </Link>
+                      <Link style={{textDecoration:"none" }} className='profiled_drop'  to="/"><small> Signout</small></Link>
                     </ListItem>
                   </List>
               </div>
