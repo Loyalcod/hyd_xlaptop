@@ -65,7 +65,7 @@ function ManuBar() {
                     </ListItem>
                     <ListItem>
                       <Link style={{textDecoration:"none" }}  to="/">
-                          <small></small> My profile
+                          <small>My profile</small> 
                       </Link>
                     </ListItem>
                     <ListItem>
