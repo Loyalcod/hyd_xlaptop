@@ -85,26 +85,26 @@
        
         margin-bottom: 20px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: right;
+        /* justify-content: none; */
 
     }
 
     .opacitywall>h1{
-        margin-left: 25%;
+        margin-left: 40%;
         font-size: 25px;
     }
     
     .opacitywall>p{
         margin-top: 2px;
-        margin-left: 42%;
+        margin-left: 40%;
         /* text-align: center; */
     }
     
     .opacitywall>button{
         margin-top: 1%;
         width: 25%;
-        margin-left: 20%;
+        margin-left:40%;
         height: 45px;
         background-color:#044e4d;
         border: none;
@@ -174,4 +174,55 @@ p{
     color: white;
     margin: 0px;
     padding: 0px;
+}
+
+.category{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    /* background-color: #044e4d; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.categorystyle{
+    width: 45%;
+    height: 100%;
+    /* flex: 2; */
+    /* background-color: #1e2321; */
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.categorystyle:hover{
+    box-shadow: 2px 5px 10px 0px rgb(206, 206, 206);    
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .category{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 70px;
+        height: 1200px;
+        /* background-color: #044e4d; */
+       
+    }
+    .categorystyle{
+        width: 90%;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+       
+        
+    }
 }
