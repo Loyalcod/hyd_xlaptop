@@ -1,0 +1,177 @@
+.pageBody {
+    width: 100%;
+    margin-top: 10px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wallpaper {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+
+}
+
+.wallone {
+    width: 100%;
+    height: inherit;
+    background-image: url('../../images/wallpaperone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .wallpaper {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.opacitywall {
+    width: 100%;
+    height: 500px;
+    background: rgba(4, 123, 117, 0.3);
+    background: linear-gradient(to right,  #73C8A9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.opacitywall>h1{
+    margin-left: 55%;
+    font-size: 40px;
+}
+
+.opacitywall>p{
+    margin-left: 55%;
+    margin-top: 2px;
+}
+
+.opacitywall>button{
+    margin-top: 1%;
+    width: 25%;
+    margin-left: 55%;
+    height: 45px;
+    background-color:#044e4d;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    /* font-size: 19px; */
+}
+
+.opacitywall>button:hover{
+   background: rgba(4, 123, 117, 0.3);
+   font-size: 20px;
+   box-shadow: 10px 10px 10px #1e2321;
+}
+
+@media only screen and (max-width: 1200px) {
+    .opacitywall{
+       
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .opacitywall>h1{
+        margin-left: 25%;
+        font-size: 25px;
+    }
+    
+    .opacitywall>p{
+        margin-top: 2px;
+        margin-left: 42%;
+        /* text-align: center; */
+    }
+    
+    .opacitywall>button{
+        margin-top: 1%;
+        width: 25%;
+        margin-left: 20%;
+        height: 45px;
+        background-color:#044e4d;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        /* font-size: 19px; */
+    }
+    
+    .opacitywall>button:hover{
+       background: rgba(4, 123, 117, 0.3);
+       font-size: 20px;
+       box-shadow: 10px 10px 10px #1e2321;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .opacitywall{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .opacitywall>h1{
+        margin-left: 0px;
+        font-size: 25px;
+    }
+    
+    .opacitywall>p{
+        margin-top: 2px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .opacitywall>button{
+        margin-top: 1%;
+        width: 25%;
+        margin-left: 0px;
+        height: 40px;
+        background-color:#044e4d;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        /* font-size: 19px; */
+    }
+    
+    .opacitywall>button:hover{
+       background: rgba(4, 123, 117, 0.3);
+       font-size: 20px;
+       box-shadow: 10px 10px 10px #1e2321;
+    }
+}
+
+h1{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+p{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}

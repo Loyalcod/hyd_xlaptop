@@ -1,5 +1,5 @@
 import './App.css';
-import ManuBar from './layouts/MenuBar/ManuBar';
+import Home from './pages/HomePage/home';
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path="/" element={<ManuBar/>}></Route>
+        <Route path='/' element={<Home />}></Route>
+      
       </Routes>
+      
     </div>
   );
 }
