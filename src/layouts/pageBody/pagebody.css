@@ -226,3 +226,186 @@ p{
         
     }
 }
+
+.pcsales{
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* gap: 50px; */
+}
+
+.pcsalebox{
+    width: 22%;
+    height: 80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.pcsalebox:hover{
+    box-shadow: 0px 5px 10px 0px #c0c0c0;
+}
+
+.pcsaleboximg{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+
+.pcsaleboximg>img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.pcsaleboxtxt{
+    width: 100%;
+    height: 20%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #044e4d;
+    text-decoration: none;
+}
+
+.pcsaleboxtxt>p{
+    color: #044e4d;
+}
+
+@media only screen and (max-width: 1100px) {
+    .pcsales{
+        margin-top: 500px;
+        /* height: 500px; */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pcsales{
+        margin-top: 0px;
+    
+    }
+
+    .pcsalebox{
+        width: 40%;
+        height: 80%;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .pcsales{
+        margin-top: 0px;
+    
+    }
+
+    .pcsalebox{
+        width: 50%;
+        height: 70%;
+        
+    }
+}
+
+.phonescale{
+    width: 100%;
+    height: 250px;
+    /* background-color: #044e4d; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone_box{
+    width: 22%;
+    height: 90%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+
+}
+
+.phone_box:hover{
+    box-shadow: 0px 5px 10px 0px #c0c0c0;
+
+}
+
+.phone_box_img{
+    width: 100%;
+    height: 80%;
+    /* background-color: pink; */
+}
+
+.phone_box_img>img{
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.phone_box_txt{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #044e4d;
+    text-decoration: none;
+}
+
+.phone_box_txt>p{
+    color:#044e4d;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .styleh4{
+        margin-top: 230px;
+    }
+    .phonescale{
+        flex-wrap: wrap;
+      
+    }
+    
+    .phone_box{
+        width: 40%;
+        margin-top: 30px;
+      
+    
+    }
+    
+    .phone_box:hover{
+        box-shadow: 0px 5px 10px 0px #c0c0c0;
+    
+    }
+    
+    .phone_box_img{
+       
+    }
+    
+    .phone_box_img>img{
+       
+    }
+    
+    .phone_box_txt{
+        
+    }
+    
+    .phone_box_txt>p{
+       
+    }
+}

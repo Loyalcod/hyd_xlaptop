@@ -5,15 +5,36 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import imageit from "../../images/mac_pro.jpg";
+import dellproduct from '../../images/dell_pro.jpg'
+import hp_product from '../../images/hp_pro.jpg'
+import { Link } from "react-router-dom";
+import leneovo_pro from '../../images/lenovo_pro.jpg'
+import phoneApple from '../../images/iphone.jpg'
+import phoneSamsung from '../../images/samsung.jpg'
+import phoneTecno from '../../images/tecno.jpg'
+import phoneInfinix from '../../images/infinix_smart_6_1.jpg'
 
 function PageBody() {
-  
+  const allPc = [
+    { imageall: imageit, alt: "Apple Product" },
+    { imageall: dellproduct, alt: "HP Product" },
+    { imageall: hp_product, alt: "Dell Product" },
+    { imageall: leneovo_pro, alt: "Lenovo Product" },
+  ];
+
+  const allPhone = [
+    { imageall: phoneApple, alt: "Iphone Product" },
+    { imageall: phoneSamsung, alt: "Samsung Product" },
+    { imageall: phoneTecno, alt: "Tecno Product" },
+    { imageall: phoneInfinix, alt: "Infinix Product" },
+  ];
+
   return (
     <div className="pageBody">
       <div className="container">
         {/* wallpaper image start here */}
-       
+
         <div className="wallpaper">
           <div className="wallone">
             <div className="slide-container">
@@ -47,7 +68,9 @@ function PageBody() {
                   Smart Laptops & Tablet
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo, eligendi magnam nam dolorem nobis porro? Vel dicta sint ex!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  nemo, eligendi magnam nam dolorem nobis porro? Vel dicta sint
+                  ex!
                 </Typography>
               </CardContent>
               <CardActions>
@@ -81,7 +104,39 @@ function PageBody() {
           </div>
         </div>
         <h4>Features for PC</h4>
-        <div className="pcsales"></div>
+        <div className="pcsales">
+
+          {allPc.map((items) => (
+            <div className="pcsalebox">
+              <Link to="/" className="pcsaleboximg">
+                <img src={items.imageall} alt="" />
+              </Link>
+              <Link className="pcsaleboxtxt">
+                <p>
+                  <strong>{items.alt} </strong>
+                </p>
+                <small>View More</small>
+              </Link>
+            </div>
+          ))}
+
+        </div>
+        <h4 className="styleh4">Feaures of Phones</h4>
+        <div className="phonescale">
+            {allPhone.map((phoneItems)=>(
+              <div className="phone_box">
+              <div className="phone_box_img">
+                <img src={phoneItems.imageall} alt="" />
+              </div>
+              <div className="phone_box_txt">
+              <p>
+                  <strong>{phoneItems.alt}</strong>
+                </p>
+                <small>View More</small>
+              </div>
+            </div>
+            ))}
+        </div>
       </div>
     </div>
   );
