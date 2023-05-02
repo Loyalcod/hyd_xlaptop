@@ -9,16 +9,16 @@ function NavigationBar() {
                 <Link to="/" className="navLink">Home</Link>
             </div>
             <div className="nav">
-                <Link to="/" className="navLink"> PC / Tablet</Link>
+                <Link to="pc" className="navLink"> PC / Tablet</Link>
             </div>
             <div className="nav">
-                <Link to="/" className="navLink">Phones</Link>
+                <Link to="phones" className="navLink">Phones</Link>
             </div>
             <div className="nav">
-                <Link to="/" className="navLink">About-Us</Link>
+                <Link to="about_us" className="navLink">About-Us</Link>
             </div>
             <div className="nav">
-                <Link to="/" className="navLink">Contact-Us</Link>
+                <Link to="contact_us" className="navLink">Contact-Us</Link>
             </div>
         </div>
     </div>

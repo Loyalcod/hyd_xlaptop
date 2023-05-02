@@ -7,7 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import PersonIcon from '@mui/icons-material/Person';
 import LogoutIcon from '@mui/icons-material/Logout';
 import DehazeIcon from '@mui/icons-material/Dehaze';
-import { Grow, colors } from '@mui/material';
+import { Grow } from '@mui/material';
 import { Slide } from '@mui/material';
 
 
@@ -52,13 +52,13 @@ function ManuBar() {
                       <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>Home </small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>PC & Tablet</small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="pc"> <small>PC & Tablet</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small>Phones</small> </Link>
+                      <Link style={{textDecoration:"none" }}  className='profiled_drop' to="phones"> <small>Phones</small> </Link>
                     </ListItem>
                     <ListItem>
-                      <Link  style={{textDecoration:"none" }} className='profiled_drop' to="/"> <small>About</small> </Link>
+                      <Link  style={{textDecoration:"none" }} className='profiled_drop' to="about_us"> <small>About</small> </Link>
                     </ListItem>
                     <ListItem>
                       <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"><small>Add to Cart </small> </Link>
@@ -67,7 +67,7 @@ function ManuBar() {
                       <Link style={{textDecoration:"none" }}  className='profiled_drop' to="/"> <small> My profile</small></Link>
                     </ListItem>
                     <ListItem>
-                      <Link style={{textDecoration:"none" }} className='profiled_drop' to="/"><small> Signout</small></Link>
+                      <Link style={{textDecoration:"none" }} className='profiled_drop' to="contact_us"><small> Signout</small></Link>
                     </ListItem>
                   </List>
               </div>

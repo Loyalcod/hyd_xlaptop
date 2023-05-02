@@ -1,13 +1,17 @@
 import ManuBar from "../../layouts/MenuBar/ManuBar"
+import FooterCon from "../../layouts/endpage/FooterCon"
 import NavigationBar from "../../layouts/navigationBar/NavigationBar"
-import PageBody from "../../layouts/pageBody/PageBody"
+import { Outlet } from "react-router-dom"
 
 function home() {
   return (
     <>
         <ManuBar />
         <NavigationBar />
-        <PageBody />
+        <div className="pageBody">
+          <Outlet />
+        </div>
+        <FooterCon />
     </>
   )
 }

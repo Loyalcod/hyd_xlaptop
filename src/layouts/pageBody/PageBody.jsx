@@ -31,7 +31,7 @@ function PageBody() {
   ];
 
   return (
-    <div className="pageBody">
+    <>
       <div className="container">
         {/* wallpaper image start here */}
 
@@ -138,7 +138,7 @@ function PageBody() {
             ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
